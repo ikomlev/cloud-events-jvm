@@ -159,7 +159,6 @@ fun parseEventTime(timestamp: String): Instant {
     return ZonedDateTime.parse(timestamp, rfc3339Formatter).toInstant()
 }
 
-
 fun parseEventTime(timestamp: OffsetDateTime): String = timestamp.toString()
 
 fun parseEventTime(timestamp: LocalDateTime, timeZone: ZoneId = ZoneId.systemDefault()): String {
